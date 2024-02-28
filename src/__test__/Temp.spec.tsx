@@ -1,7 +1,22 @@
-describe('it, test의 묶음', () => {
+describe('테스트 하고자 하는 컴포넌트', () => {
     beforeEach(() => {
-        console.log("beforeEach")
-    })
+        console.log("beforeEach");
+    });
+
+    beforeAll(() => {
+        console.log("beforeAll");
+    });
+
+    afterEach(() => {
+        console.log("afterEach")
+    });
+
+
+    afterAll(() => {
+        console.log("beforeAll");
+    });
+
+
     it('should test the first case', () => {
         console.log("it")
     });
